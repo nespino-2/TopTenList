@@ -14,13 +14,17 @@ TopTenList::TopTenList()
 }
 
 void TopTenList::display_forward(){
-    // for (auto =it;it<_list.begin();++it) {
-    //   cout >> _list[it];
-    // }
+    for (int i=0;i<(int)_list.size();i++) {
+      cout << i << ": "<< _list[i].url << "\n";
+    }
 
 }
 
-void ToopTenList::display_backward() {
+void TopTenList::display_backward() {
+  int size = (int)_list.size()-1;
+  for (int i=size; i>=0; i--) {
+    cout << i << ": "<< _list[i].url << "\n";
+  }
 
 }
 
